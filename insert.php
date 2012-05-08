@@ -12,9 +12,24 @@ if (!$con)
   
 mysql_select_db("mydb", $con);
 
-$searched = $_POST["type"];
+if (empty($_POST["all_type"])) {
+	$searched = $_POST["type"];
+	$query = "SELECT * FROM Kid_Icarus_material_database where Weapon_Type='$searched'";
+}
+else {
+	$query = "SELECT * FROM Kid_Icarus_material_database";
+}
 
-$result = mysql_query("SELECT * FROM Kid_Icarus_material_database where Weapon_Type='$searched'");
+if (empty($_POST["charged"])) {
+	echo "Hey";
+}
+else {
+	$charge = $_POST["charged"];
+	$query = $query . " WHERE " . $charge . " = '1'";
+}
+
+
+$result = mysql_query($query);
 
 while($row = mysql_fetch_array($result))
   {
