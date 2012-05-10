@@ -1,6 +1,16 @@
 <html>
 <body>
 
+<!--- Database for material in Kid Icarus (3DS)
+      First attempt at making personal database
+	  Always found it time consuming to search 
+	  through ALL of my available weapons,
+	  so making a database on it will help me
+	  search when I need certain ones for the
+	  fusing process
+	  Maybe?
+											--->
+
 <form action="insert.php" method="post">
 
 Weapon Type: <input type="text" name="type" /><br>
@@ -32,23 +42,25 @@ Weapon Type: <input type="text" name="type" /><br>
 <input type="checkbox" name="over_move" value="Overall_Movement_Speed_4">Overall Movement Speed<br>
 <input type="checkbox" name="walk_spd" value="Walking_Speed_4">Walking Speed<br>
 <input type="checkbox" name="run_spd" value="Running_Speed_4">Running Speed<br>
-<input type="checkbox" name="walk_spd" value="Evasion_4">Evasion<br>
+<input type="checkbox" name="evasion" value="Evasion_4">Evasion<br>
 <input type="checkbox" name="healing" value="Healing_4">Healing<br>
 <input type="checkbox" name="effect" value="Effect_4">Effect Time<br>
-<input type="checkbox" name="poison_att" value="Poison_Attack_4">Poison Attack<br>
-<input type="checkbox" name="paralysis_att" value="Paralysis_Attack_4">Paralysis Attack<br>
-<input type="checkbox" name="weaken_att" value="Weakening_Attack_4">Weakening Attack<br>
-<input type="checkbox" name="petrify_att" value="Petrify_Attack_4">Petrify Attack<br>
-<input type="checkbox" name="shake_att" value="Shaking_Attack_4">Shaking Attack<br>
-<input type="checkbox" name="confu_att" value="Confusion_Attack_4">Confusion Attack<br>
-<input type="checkbox" name="burn_att" value="Burning_Attack_4">Burning Attack<br>
-<input type="checkbox" name="freeze_att" value="Freezing_Attack_4">Freezing Attack<br>
+-----<br>
+<input type="radio" name="status" value="Poison_Attack_4">Poison Attack<br>
+<input type="radio" name="status" value="Paralysis_Attack_4">Paralysis Attack<br>
+<input type="radio" name="status" value="Weakening_Attack_4">Weakening Attack<br>
+<input type="radio" name="status" value="Petrify_Attack_4">Petrify Attack<br>
+<input type="radio" name="status" value="Shaking_Attack_4">Shaking Attack<br>
+<input type="radio" name="status" value="Confusion_Attack_4">Confusion Attack<br>
+<input type="radio" name="status" value="Burning_Attack_4">Burning Attack<br>
+<input type="radio" name="status" value="Freezing_Attack_4">Freezing Attack<br>
+-----<br>
 <input type="checkbox" name="range" value="Range_3">Range<br>
 <input type="checkbox" name="homing" value="Homing_3">Homing<br>
-<input type="checkbox" name="shot_pow" value="Shot_Power_1">Shot Power<br>
+<input type="checkbox" name="shot_can" value="Shot_Power_1">Shot Cancellation<br>
 <input type="checkbox" name="auto_up" value="Auto_Up_1">Auto Up<br>
 <input type="checkbox" name="power_fullh" value="Power_Up_at_Full_Health_4_or_up">Power-up at Full Health<br>
-<input type="checkbox" name="emer_eva" value="Emergency__Evasion_3">Emergency Evasion<br>
+<input type="checkbox" name="emer_eva" value="Emergency_Evasion_3">Emergency Evasion<br>
 <input type="checkbox" name="emer_power" value="Emergency_Power_Up_4_or_up">Emergency Power-up<br>
 <input type="checkbox" name="heart" value="Heart_Get_3">Heart Get Boost<br>
 -----<br>
