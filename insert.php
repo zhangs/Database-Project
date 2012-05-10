@@ -464,19 +464,27 @@ else {
 // test
 // echo $query;
 
-
 $result = mysql_query($query);
+
+// Put results into table
+$table = '<table border="1" align="center"><tr><td>Weapon Name</td><td>Cost</td></tr>';
 
 while($row = mysql_fetch_array($result))
   {
-  echo $row['Weapon_Name'] . " " . $row['Cost'];
-  echo "<br />";
+  $table = $table . "<tr><td>" . $row['Weapon_Name'] . "</td><td>" . $row['Cost'] . "</td></tr>";
+//  echo $row['Weapon_Name'] . " " . $row['Cost'];
+//  echo "<br />";
   }
+  
+$table = $table . '</tr></table>';
+echo $table;
 
 mysql_close($con);
 ?> 
 
-<a href="page.html">Home</a>
+<br>
+<hr/>
+<p align="center"><a href="page.html">Home</a></p>
 
 </body>
 </html>
