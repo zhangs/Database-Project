@@ -520,6 +520,6 @@ echo $table;
 
 <br>
 <hr/>
-<p align="center"><a href="page.html">Home</a></p>
+<p align="center"><a href="icaruspage.html">Kid Icarus home</a></p>
 </body>
 </html>

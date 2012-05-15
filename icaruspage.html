@@ -1,24 +1,25 @@
 <html>
 <body>
 
-<form method="post" action="finishedinsert.php">
+<h1>Kid Icarus Material Database</h1>
+<hr/>
+<br>
 
-Weapon Type:<br>
-<input type="radio" name="weapon" value="Blade">Blade<br>
-<input type="radio" name="weapon" value="Staff">Staff<br>
-<input type="radio" name="weapon" value="Claws">Claws<br>
-<input type="radio" name="weapon" value="Bow">Bow<br>
-<input type="radio" name="weapon" value="Palm">Palm<br>
-<input type="radio" name="weapon" value="Club">Club<br>
-<input type="radio" name="weapon" value="Cannon">Cannon<br>
-<input type="radio" name="weapon" value="Orbitars">Orbitars<br>
-<input type="radio" name="weapon" value="Arm">Arm<br>
+<!--- Database for material in Kid Icarus (3DS)
+      First attempt at making personal database
+	  Always found it time consuming to search 
+	  through ALL of my available weapons,
+	  so making a database on it will help me
+	  search when I need certain ones for the
+	  fusing process
+	  Maybe?
+											--->
+
+<form action="insert.php" method="post">
+
+Weapon Type: <input type="text" name="type" /><br>
+<input type="checkbox" name="all_type" value="All">All Types?<br>
 -----<br>
-Weapon Name: <input type="text" name="name" /><br>
------<br>
-Cost: <input type="text" name="cost" /><br>
------<br>
-Skills:<br>
 <input type="radio" name="charged" value="Standing_Dash_Shot_4">Standing Charged Shot<br>
 <input type="radio" name="charged" value="Overall_Dash_Shot_4">Overall Dash Charged Shot<br>
 <input type="radio" name="charged" value="Forward_Dash_Shot_4">Forwarnd Dash Charged Shot<br>
@@ -81,7 +82,7 @@ Skills:<br>
 
 </form>
 <hr/>
-<a href="icaruspage.html">Kid Icarus home</a>
+To add a weapon: <a href="add.html">Click Here</a>
 
 </body>
 </html>
